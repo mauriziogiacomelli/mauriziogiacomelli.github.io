@@ -1,0 +1,19 @@
+title: "Maurizio Giacomelli"
+name: "Maurizio Giacomelli"
+description: "Software Developer & IT Consultant"
+url: "https://giacomellimaurizio.github.io"
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark" # oppure: default, air, contrast, mint, sunrise
+
+author:
+  name: "Maurizio Giacomelli"
+  bio: "Sviluppatore Java & Full Stack, specializzato in applicazioni enterprise"
+  location: "Trento, Italia"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/giacomellimaurizio/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:mauriziogiacomelli@gmail.com"
