@@ -1,6 +1,8 @@
 main:
   - title: "Chi sono"
     url: /chi-sono/
+  - title: "Lavori"
+    url: /lavori/
   - title: "Servizi"
     url: /servizi/
   - title: "Stack"

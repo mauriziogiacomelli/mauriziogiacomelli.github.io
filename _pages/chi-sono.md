@@ -33,3 +33,7 @@ Mi occupo di sviluppo full stack su applicazioni web enterprise:
 ## Settori
 
 Ho lavorato principalmente in ambito **bancario e finanziario**, dove stabilita, sicurezza e tracciabilita sono requisiti non negoziabili.
+
+## Un esempio concreto
+
+Nella pagina [Lavori](/lavori/) trovi **Job Tracker**, un'applicazione full stack Java/Angular su AWS che ho progettato e sviluppato: puoi [provarne la demo](https://mauriziogiacomelli.github.io/job-tracker-demo/) e leggere [come è stata realizzata](https://mauriziogiacomelli.github.io/job-tracker-demo/#/come-e-fatto), compresi i problemi risolti durante lo sviluppo.
