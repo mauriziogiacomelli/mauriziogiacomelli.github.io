@@ -1,0 +1,137 @@
+{
+  "configVersion": 1,
+  "timestamp": 1793123494741,
+  "index": "/job-tracker-demo/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/job-tracker-demo/chunk-2WGT2GYM.js",
+        "/job-tracker-demo/chunk-3ID6RKUS.js",
+        "/job-tracker-demo/chunk-3PMZ5QCT.js",
+        "/job-tracker-demo/chunk-5KMAZT2J.js",
+        "/job-tracker-demo/chunk-7ZQJRE5D.js",
+        "/job-tracker-demo/chunk-AF3M2EXS.js",
+        "/job-tracker-demo/chunk-E32TV7KO.js",
+        "/job-tracker-demo/chunk-EIH2PX7Q.js",
+        "/job-tracker-demo/chunk-EWXCJDQ4.js",
+        "/job-tracker-demo/chunk-G6SWIP3S.js",
+        "/job-tracker-demo/chunk-GKBAEHAJ.js",
+        "/job-tracker-demo/chunk-IHEYSUJU.js",
+        "/job-tracker-demo/chunk-JSY2JC6F.js",
+        "/job-tracker-demo/chunk-KEY43RPI.js",
+        "/job-tracker-demo/chunk-MCJZNLYM.js",
+        "/job-tracker-demo/chunk-MOQGFXY2.js",
+        "/job-tracker-demo/chunk-MPVBL2IJ.js",
+        "/job-tracker-demo/chunk-O7GVOZZW.js",
+        "/job-tracker-demo/chunk-PNS6YFJZ.js",
+        "/job-tracker-demo/chunk-Q3BRIAHO.js",
+        "/job-tracker-demo/chunk-Q4AL3K3Z.js",
+        "/job-tracker-demo/chunk-QSATB6M2.js",
+        "/job-tracker-demo/chunk-S24IVQ25.js",
+        "/job-tracker-demo/chunk-TA5TAIXI.js",
+        "/job-tracker-demo/chunk-TRTRCS7C.js",
+        "/job-tracker-demo/chunk-UVYC562T.js",
+        "/job-tracker-demo/chunk-WS5D5KFJ.js",
+        "/job-tracker-demo/chunk-XAGAICPI.js",
+        "/job-tracker-demo/chunk-ZICAI7XX.js",
+        "/job-tracker-demo/favicon.ico",
+        "/job-tracker-demo/index.html",
+        "/job-tracker-demo/main-UOPKJQ6T.js",
+        "/job-tracker-demo/manifest.webmanifest",
+        "/job-tracker-demo/polyfills-5CFQRCPP.js",
+        "/job-tracker-demo/styles-KTGAYNVH.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/job-tracker-demo/icons/icon-128x128.png",
+        "/job-tracker-demo/icons/icon-144x144.png",
+        "/job-tracker-demo/icons/icon-152x152.png",
+        "/job-tracker-demo/icons/icon-192x192.png",
+        "/job-tracker-demo/icons/icon-384x384.png",
+        "/job-tracker-demo/icons/icon-512x512.png",
+        "/job-tracker-demo/icons/icon-72x72.png",
+        "/job-tracker-demo/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/job-tracker-demo/chunk-2WGT2GYM.js": "29057d4a8a5be911e2a8f4d3a11037e04eaeb026",
+    "/job-tracker-demo/chunk-3ID6RKUS.js": "4fae9b0d829146ff94f276c326949b56c8fba0f0",
+    "/job-tracker-demo/chunk-3PMZ5QCT.js": "81118bc4898fcb7a9cd56430602ed219744d6c31",
+    "/job-tracker-demo/chunk-5KMAZT2J.js": "22d1b29e8b7c51ac0f9d1f5486b5dbdfe02220dc",
+    "/job-tracker-demo/chunk-7ZQJRE5D.js": "b4db3e35cbe580e0c47e33740ec86eb6e0ded357",
+    "/job-tracker-demo/chunk-AF3M2EXS.js": "1821f85d9ec68bf0d88759e58c5afd3d9a3e252b",
+    "/job-tracker-demo/chunk-E32TV7KO.js": "87d093c9c7e955f4428483969bbeb203a91872ce",
+    "/job-tracker-demo/chunk-EIH2PX7Q.js": "e1b2610c8fa550e65e919b330e56e7b09cf18f0d",
+    "/job-tracker-demo/chunk-EWXCJDQ4.js": "2c0b39e1d1a9760ed1033a259734017ae5335b51",
+    "/job-tracker-demo/chunk-G6SWIP3S.js": "5e52f226bb8c795cf9f51e19a0b6f202c8f6ae46",
+    "/job-tracker-demo/chunk-GKBAEHAJ.js": "1fd6dda4e01366f288263d7be5e35148c62217be",
+    "/job-tracker-demo/chunk-IHEYSUJU.js": "65a4e518ec5bef38abc1d547d3f036289bf256c0",
+    "/job-tracker-demo/chunk-JSY2JC6F.js": "b383bac081cb402d5cc878cf428d0b2095a715cc",
+    "/job-tracker-demo/chunk-KEY43RPI.js": "5984f29a179b2f0073fec429f24d9ff754e9939d",
+    "/job-tracker-demo/chunk-MCJZNLYM.js": "6cbd4c0621ac9ada573e606a2c477799a69099d8",
+    "/job-tracker-demo/chunk-MOQGFXY2.js": "8e316d94652ee6ed48957a2f3430b2ea7890ccc9",
+    "/job-tracker-demo/chunk-MPVBL2IJ.js": "5569ca01307f6ae2996e9c2c08fd10ad10fd4f56",
+    "/job-tracker-demo/chunk-O7GVOZZW.js": "0291d061c042cd86cd75d5c2685c3f47eb020767",
+    "/job-tracker-demo/chunk-PNS6YFJZ.js": "1508bd7a80a17abb98010335611f0ab8ca522488",
+    "/job-tracker-demo/chunk-Q3BRIAHO.js": "8688d9996f9a9d77e747149f3d603e196f018edf",
+    "/job-tracker-demo/chunk-Q4AL3K3Z.js": "7701105d3644e58b09e659bae1179ef9a1426aba",
+    "/job-tracker-demo/chunk-QSATB6M2.js": "deb716ac0c36b5563854edfd59155a8b66b0c655",
+    "/job-tracker-demo/chunk-S24IVQ25.js": "fd3effc4bf5ffaaf677223a03ac5f2b122c43c21",
+    "/job-tracker-demo/chunk-TA5TAIXI.js": "dc8224179a980593540f5de6a09967fd08b24df1",
+    "/job-tracker-demo/chunk-TRTRCS7C.js": "337c727a8425b94a1764bfeb8c9762841e8db360",
+    "/job-tracker-demo/chunk-UVYC562T.js": "692dcdd7a31436fcf912e426e3e91250501a91ac",
+    "/job-tracker-demo/chunk-WS5D5KFJ.js": "e7681fbe838de478a4061cb60c3a868eb03789eb",
+    "/job-tracker-demo/chunk-XAGAICPI.js": "7604a4bb75a5ea16c7d5d06330da84d0a6c8c147",
+    "/job-tracker-demo/chunk-ZICAI7XX.js": "b1902c18f69f9990680666d90368d0095c48ec53",
+    "/job-tracker-demo/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/job-tracker-demo/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/job-tracker-demo/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/job-tracker-demo/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/job-tracker-demo/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/job-tracker-demo/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/job-tracker-demo/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/job-tracker-demo/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/job-tracker-demo/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/job-tracker-demo/index.html": "93f375444df30a289a6387cd59c6efac1b26726d",
+    "/job-tracker-demo/main-UOPKJQ6T.js": "a101923de1d0deb6bc44cd40461aaf94334382b7",
+    "/job-tracker-demo/manifest.webmanifest": "2585033bc3cfc23727c195c095705a73437fed6c",
+    "/job-tracker-demo/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
+    "/job-tracker-demo/styles-KTGAYNVH.css": "0e1bf05c86d72bcad111724bc208abfab4d3b1c5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
