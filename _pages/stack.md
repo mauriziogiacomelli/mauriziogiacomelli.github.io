@@ -23,7 +23,7 @@ toc_label: "Tecnologie"
 |---|---|
 | Angular (16–19: standalone, signals, Angular Material) | Avanzato |
 | AngularJS | Avanzato |
-| TypeScript | Avanzato |
+| TypeScript | Intermedio |
 | JavaScript | Avanzato |
 | HTML / CSS | Intermedio |
 | Quill.js | Intermedio |
