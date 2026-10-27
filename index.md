@@ -18,7 +18,7 @@ excerpt: >
 intro:
   - excerpt: >
       Lavoro come sviluppatore esterno su sistemi enterprise complessi, con competenze
-      full stack: dal backend Java / Spring Boot / Microservizi al frontend AngularJS,
+      full stack: dal backend Java / Spring Boot / Microservizi al frontend Angular e AngularJS,
       dalla progettazione database SQL Server / Oracle / MongoDB
       all'integrazione con strumenti di reporting e monitoraggio.
 ---

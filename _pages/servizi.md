@@ -12,7 +12,7 @@ Progettazione e sviluppo di applicazioni server-side con **Java** e **Spring Boo
 
 ## Sviluppo Frontend
 
-Sviluppo di interfacce web enterprise con **AngularJS** e JavaScript. Ottimizzazione performance UI su grandi volumi di dati (virtual scrolling, ottimizzazione digest cycle), rich text editor, gestione tabelle complesse.
+Sviluppo di interfacce web enterprise con **Angular** moderno (fino alla versione 19), **AngularJS**, TypeScript e JavaScript. Ottimizzazione performance UI su grandi volumi di dati (virtual scrolling, ottimizzazione digest cycle), rich text editor, gestione tabelle complesse.
 
 ## Database & SQL Server
 

@@ -3,7 +3,7 @@ tagline: "Software Developer & IT Consultant"
 description: >-
   Sviluppatore software con esperienza in applicazioni enterprise Java, 
   full stack development e consulenza IT. Specializzato in Java Spring Boot, 
-  AngularJS e integrazione sistemi complessi in ambito bancario e finanziario.
+  Angular, AngularJS e integrazione sistemi complessi in ambito bancario e finanziario.
 url: "https://mauriziogiacomelli.github.io"
 baseurl: ""
 
@@ -23,7 +23,7 @@ og_image: "/assets/images/bio-photo.jpg"
 author:
   name: "Maurizio Giacomelli"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Software Developer & IT Consultant · Java · Spring Boot · AngularJS · Trento, Italia"
+  bio: "Software Developer & IT Consultant · Java · Spring Boot · Angular · AngularJS · Trento, Italia"
   location: "Trento, Italia"
   email: "mauriziogiacomelli@gmail.com" # aggiungi la tua email
   links:

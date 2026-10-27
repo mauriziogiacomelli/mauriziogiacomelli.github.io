@@ -21,7 +21,9 @@ toc_label: "Tecnologie"
 
 | Tecnologia | Livello |
 |---|---|
+| Angular (16–19: standalone, signals, Angular Material) | Avanzato |
 | AngularJS | Avanzato |
+| TypeScript | Avanzato |
 | JavaScript | Avanzato |
 | HTML / CSS | Intermedio |
 | Quill.js | Intermedio |

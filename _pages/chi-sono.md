@@ -17,7 +17,7 @@ Ho maturato solida esperienza nello sviluppo di **applicazioni enterprise Java**
 Mi occupo di sviluppo full stack su applicazioni web enterprise:
 
 - **Backend Java** con Spring Boot e architetture a microservizi
-- **Frontend** con AngularJS e JavaScript
+- **Frontend** con Angular moderno (fino alla versione 19, la stessa usata in [Job Tracker](/lavori/)), AngularJS, TypeScript e JavaScript
 - **Database** SQL Server, ottimizzazione query e stored procedure
 - **Integrazione sistemi** e sviluppo API REST
 - **Reporting** con JasperReports e SSRS
