@@ -9,32 +9,26 @@ toc_label: "Tecnologie"
 
 ## Backend
 
-| Tecnologia | Livello |
-|---|---|
-| Java | Avanzato |
-| Spring Boot | Avanzato |
-| AspectJ | Intermedio/Avanzato |
-| MyBatis | Intermedio |
-| REST API | Avanzato |
+- Java
+- Spring Boot
+- AspectJ
+- MyBatis
+- REST API
 
 ## Frontend
 
-| Tecnologia | Livello |
-|---|---|
-| Angular (16–19: standalone, signals, Angular Material) | Avanzato |
-| AngularJS | Avanzato |
-| TypeScript | |
-| JavaScript | Avanzato |
-| HTML / CSS | Intermedio |
-| Quill.js | Intermedio |
+- Angular (16–19: standalone, signals, Angular Material)
+- AngularJS
+- TypeScript
+- JavaScript
+- HTML / CSS
+- Quill.js
 
 ## Database
 
-| Tecnologia | Livello |
-|---|---|
-| SQL Server | Avanzato |
-| Query ottimizzazione | Avanzato |
-| Stored Procedure | Intermedio/Avanzato |
+- SQL Server
+- Query ottimizzazione
+- Stored Procedure
 
 ## DevOps & Strumenti
 
