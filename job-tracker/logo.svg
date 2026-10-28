@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!--
+    Logo di Job Tracker (monogramma JT con lente), sorgente delle immagini in public/.
+    Le lettere sono tracciati (scripts/logo-lettere.py): il logo e' identico su ogni dispositivo. Immagini: scripts/genera-icone.py.
+  -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00adb5"/>
+      <stop offset="1" stop-color="#c792ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#2a303b"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <!-- JT in Segoe UI Black, convertito in tracciato da scripts/logo-lettere.py -->
+  <path fill="#eaeaea" d="M24.91 34.2Q24.91 42.1 16.19 42.1Q15.49 42.1 14.5 41.95Q13.51 41.8 12.5 41.5V36.55Q13.22 36.99 14.1 37.26Q14.98 37.52 15.56 37.52Q17.19 37.52 18 36.64Q18.81 35.75 18.81 33.89V24H24.91Z M37.48 28.19V41.79H31.36V28.19H25.71V24H43.2V28.19Z"/>
+  <circle cx="45" cy="44" r="7" fill="none" stroke="#00adb5" stroke-width="3.5"/>
+  <path d="M50 49l5 5" stroke="#c792ea" stroke-width="4" stroke-linecap="round"/>
+</svg>
