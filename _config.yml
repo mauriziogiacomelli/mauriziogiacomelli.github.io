@@ -74,3 +74,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # fuori dalla sitemap: l'app privata (dietro login) e il file di verifica di Google Search Console
+  - scope:
+      path: "job-tracker"
+    values:
+      sitemap: false
+  - scope:
+      path: "googleb2bb8f06b7b8b7e1.html"
+    values:
+      sitemap: false

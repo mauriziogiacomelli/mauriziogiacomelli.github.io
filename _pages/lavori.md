@@ -14,7 +14,7 @@ Una selezione di progetti personali che mostrano come lavoro: dall'analisi alla 
 **Applicazione web full stack per gestire una ricerca di lavoro**: un agente AI cerca e verifica nuove offerte due volte al giorno per ogni utente, secondo i suoi criteri; l'app tiene traccia delle candidature e del loro stato e invia un riepilogo via email.
 
 [Prova la demo](https://mauriziogiacomelli.github.io/job-tracker-demo/){: .btn .btn--primary .btn--large}
-[Come è fatto](https://mauriziogiacomelli.github.io/job-tracker-demo/#/come-e-fatto){: .btn .btn--inverse .btn--large}
+[Come è fatto](/lavori/job-tracker/){: .btn .btn--inverse .btn--large}
 
 La demo è navigabile senza registrazione e usa dati di esempio inventati: si possono cercare offerte, registrare candidature, cambiarne lo stato e modificare le impostazioni.
 {: .notice--info}
@@ -54,7 +54,7 @@ La demo è navigabile senza registrazione e usa dati di esempio inventati: si po
 - **CV cifrato** nel database con AES-256-GCM, con la chiave conservata separatamente in AWS; all'agente arrivano solo estratti senza recapiti
 - **Sicurezza verificata** con test di intrusione sull'ambiente reale e revisione del codice
 - **Spring Boot su AWS Lambda**: avvio rapido con SnapStart e gestione corretta delle connessioni al database attorno allo snapshot
-- **27 problemi reali risolti e documentati** durante lo sviluppo (sintomo, causa, soluzione e motivazione), consultabili nella pagina [Come è fatto](https://mauriziogiacomelli.github.io/job-tracker-demo/#/come-e-fatto)
+- **26 problemi reali risolti e documentati** durante lo sviluppo (sintomo, causa, soluzione e motivazione), consultabili nella pagina [Come è fatto](/lavori/job-tracker/)
 
 <figure class="half">
   <img src="/assets/images/lavori/job-tracker-candidatura.png" alt="Dettaglio di una candidatura con storico degli stati">

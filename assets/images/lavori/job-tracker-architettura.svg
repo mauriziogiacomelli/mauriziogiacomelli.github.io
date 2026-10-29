@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-labelledby="titolo-schema">
+    <title id="titolo-schema">
+      Il browser carica l'app da GitHub Pages, fa login su Cognito e chiama l'API su API Gateway,
+      che invoca Spring Boot su Lambda collegato a PostgreSQL su Neon. L'agente di ricerca usa un token macchina e invia email.
+    </title>
+    <style>
+      text { font-family: Roboto, "Segoe UI", Arial, sans-serif; }
+      .zona { fill: none; stroke: #3d4553; stroke-dasharray: 6 5; }
+      .zona-titolo { fill: #a8b0b6; font-size: 13px; font-weight: 600; }
+      .nodo rect { fill: #2a303b; stroke: #3d4553; stroke-width: 1.2; }
+      .nodo.accento rect { stroke: #00adb5; }
+      .nodo text { fill: #eaeaea; font-size: 14px; font-weight: 600; text-anchor: middle; }
+      .nodo text.sotto { fill: #a8b0b6; font-size: 12px; font-weight: 400; }
+      .filo { stroke: #00adb5; stroke-width: 1.6; }
+      .filo.tratteggio { stroke-dasharray: 5 4; }
+      .punta { fill: #00adb5; }
+      .etichetta-filo { fill: #a8b0b6; font-size: 11.5px; }
+    </style>
+    <rect x="0" y="0" width="860" height="400" rx="12" fill="#252a34" />
+    <defs>
+      <marker id="freccia" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" class="punta" />
+      </marker>
+    </defs>
+    <rect x="300" y="20" width="540" height="270" rx="14" class="zona" />
+    <text x="316" y="44" class="zona-titolo">AWS (eu-west-1)</text>
+    <g class="nodo"><rect x="20" y="70" width="210" height="64" rx="10" /><text x="125" y="98">Browser / telefono</text><text x="125" y="118" class="sotto">Angular 19 · PWA</text></g>
+    <g class="nodo"><rect x="20" y="200" width="210" height="64" rx="10" /><text x="125" y="228">GitHub Pages</text><text x="125" y="248" class="sotto">HTTPS · al posto di CloudFront</text></g>
+    <g class="nodo"><rect x="330" y="60" width="200" height="64" rx="10" /><text x="430" y="88">Amazon Cognito</text><text x="430" y="108" class="sotto">login PKCE · token JWT</text></g>
+    <g class="nodo accento"><rect x="330" y="190" width="200" height="64" rx="10" /><text x="430" y="218">API Gateway</text><text x="430" y="238" class="sotto">HTTP API · CORS · limiti</text></g>
+    <g class="nodo accento"><rect x="610" y="190" width="210" height="64" rx="10" /><text x="715" y="218">Lambda · Spring Boot 4</text><text x="715" y="238" class="sotto">Java 21 · SnapStart</text></g>
+    <g class="nodo"><rect x="610" y="60" width="210" height="64" rx="10" /><text x="715" y="88">SSM Parameter Store</text><text x="715" y="108" class="sotto">segreti cifrati</text></g>
+    <g class="nodo accento"><rect x="610" y="318" width="210" height="64" rx="10" /><text x="715" y="346">Neon · PostgreSQL</text><text x="715" y="366" class="sotto">serverless · Francoforte · 0 €</text></g>
+    <g class="nodo"><rect x="20" y="318" width="210" height="64" rx="10" /><text x="125" y="346">Agente di ricerca</text><text x="125" y="366" class="sotto">timer EventBridge · email</text></g>
+    <line x1="125" y1="200" x2="125" y2="138" class="filo" marker-end="url(#freccia)" />
+    <line x1="230" y1="92" x2="326" y2="92" class="filo" marker-end="url(#freccia)" />
+    <line x1="230" y1="118" x2="326" y2="210" class="filo" marker-end="url(#freccia)" />
+    <line x1="530" y1="222" x2="606" y2="222" class="filo" marker-end="url(#freccia)" />
+    <line x1="715" y1="190" x2="715" y2="128" class="filo tratteggio" marker-end="url(#freccia)" />
+    <line x1="715" y1="254" x2="715" y2="314" class="filo" marker-end="url(#freccia)" />
+    <line x1="230" y1="350" x2="400" y2="258" class="filo tratteggio" marker-end="url(#freccia)" />
+
+    <text x="278" y="84" class="etichetta-filo">login</text>
+    <text x="236" y="178" class="etichetta-filo">API + token</text>
+    <text x="545" y="214" class="etichetta-filo">invoca</text>
+    <text x="725" y="160" class="etichetta-filo">password DB</text>
+    <text x="725" y="290" class="etichetta-filo">SQL / TLS</text>
+    <text x="300" y="336" class="etichetta-filo">token macchina</text>
+  </svg>
