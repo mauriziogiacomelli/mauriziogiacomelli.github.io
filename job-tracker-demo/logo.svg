@@ -11,8 +11,8 @@
   </defs>
   <rect width="64" height="64" rx="14" fill="#2a303b"/>
   <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="url(#g)" stroke-width="3"/>
-  <!-- JT in Segoe UI Black, convertito in tracciato da scripts/logo-lettere.py -->
-  <path fill="#eaeaea" d="M24.91 34.2Q24.91 42.1 16.19 42.1Q15.49 42.1 14.5 41.95Q13.51 41.8 12.5 41.5V36.55Q13.22 36.99 14.1 37.26Q14.98 37.52 15.56 37.52Q17.19 37.52 18 36.64Q18.81 35.75 18.81 33.89V24H24.91Z M37.48 28.19V41.79H31.36V28.19H25.71V24H43.2V28.19Z"/>
-  <circle cx="45" cy="44" r="7" fill="none" stroke="#00adb5" stroke-width="3.5"/>
-  <path d="M50 49l5 5" stroke="#c792ea" stroke-width="4" stroke-linecap="round"/>
+  <!-- JT in Source Sans 3 Black (SIL OFL), convertito in tracciato da scripts/logo-lettere.py -->
+  <path fill="#eaeaea" d="M18.96 42.43Q16.7 42.43 15.12 41.6Q13.53 40.76 12.5 38.93L15.88 36.86Q16.26 37.53 16.95 37.92Q17.64 38.31 18.39 38.31Q19.61 38.31 20.23 37.67Q20.84 37.03 20.84 35.25V24H26.23V35.64Q26.23 37.51 25.44 39.05Q24.66 40.6 23.05 41.52Q21.43 42.43 18.96 42.43Z M32.42 42.1V28.01H27.03V24H43.2V28.01H37.81V42.1Z"/>
+  <circle cx="47" cy="46" r="7" fill="none" stroke="#00adb5" stroke-width="3.5"/>
+  <path d="M52 51l5 5" stroke="#c792ea" stroke-width="4" stroke-linecap="round"/>
 </svg>
