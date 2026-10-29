@@ -1,0 +1,1 @@
+var t={demo:!1,apiUrl:"https://1z7kpwcdhg.execute-api.eu-west-1.amazonaws.com",usaHash:!0,statistiche:null,cognito:{issuer:"https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_TrYaSBT7P",dominio:"https://job-tracker-392712991691.auth.eu-west-1.amazoncognito.com",clientId:"3d40dd2idskefti6umloms1t21"}};export{t as a};
