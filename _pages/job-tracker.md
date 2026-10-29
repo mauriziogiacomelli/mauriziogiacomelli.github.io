@@ -14,7 +14,7 @@ toc_label: "Indice"
 [Torna a Lavori](/lavori/){: .btn .btn--inverse .btn--large}
 
 - **3** stack AWS definiti in Java (CDK)
-- **20** test di integrazione su PostgreSQL reale
+- **24** test di integrazione su PostgreSQL reale
 - **33** test end-to-end Cypress, accessibilità inclusa
 - **26** problemi risolti e documentati
 - **0 €** costo mensile previsto
