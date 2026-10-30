@@ -58,7 +58,6 @@ JUnit · Mockito · Testcontainers · Cypress (end-to-end e accessibilità) · S
 | Log4j2, Elasticsearch, Kibana (ELK) | Log centralizzati e monitoraggio |
 | JasperReports | Report e documenti PDF |
 | SSRS | Report enterprise |
-| Qlik | Analisi dati |
 
 ## Strumenti
 
