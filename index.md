@@ -11,8 +11,8 @@ header:
     - label: "Contattami"
       url: "/contatti/"
 excerpt: >
-  Sviluppatore software specializzato in applicazioni **enterprise Java**,
-  consulente IT dal 2004 in progetti per banche, telecomunicazioni,
+  Sviluppatore software dal **2004**, specializzato in applicazioni **enterprise Java**;
+  consulente IT libero professionista dal **2016**, in progetti per banche, telecomunicazioni,
   pubblica amministrazione e aziende private.
   Con base a Trento, **disponibile da remoto in tutta Italia**.
 
