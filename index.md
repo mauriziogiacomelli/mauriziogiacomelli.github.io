@@ -12,7 +12,8 @@ header:
       url: "/contatti/"
 excerpt: >
   Sviluppatore software specializzato in applicazioni **enterprise Java**,
-  consulente IT con esperienza ventennale nel settore bancario e finanziario.
+  consulente IT con esperienza ventennale in progetti per banche, telecomunicazioni,
+  pubblica amministrazione e aziende private.
   Con base a Trento, **disponibile da remoto in tutta Italia**.
 
 intro:
