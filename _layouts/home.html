@@ -13,7 +13,16 @@ layout: archive
 {% assign gruppi = site.posts | group_by: "progetto" %}
 {% for gruppo in gruppi %}
   <section class="aggiornamenti">
-    <h4 class="aggiornamenti__progetto">{% if gruppo.name != "" %}{{ gruppo.name }}{% else %}Altri articoli{% endif %}</h4>
+    {% assign progetto = site.data.progetti[gruppo.name] %}
+    {% if progetto %}
+      <a class="aggiornamenti__progetto" href="{{ progetto.url | relative_url }}">
+        <img src="{{ progetto.icona | relative_url }}" alt="" width="28" height="28">
+        <span class="aggiornamenti__nome">{{ gruppo.name }}</span>
+        <span class="aggiornamenti__descrizione">{{ progetto.descrizione }} →</span>
+      </a>
+    {% else %}
+      <h4 class="aggiornamenti__altri">{% if gruppo.name != "" %}{{ gruppo.name }}{% else %}Altri articoli{% endif %}</h4>
+    {% endif %}
     <ul class="aggiornamenti__lista">
       {% for post in gruppo.items %}
         <li>

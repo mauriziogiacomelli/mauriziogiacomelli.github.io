@@ -44,7 +44,14 @@
 
 /* Aggiornamenti in home: compatti e raggruppati per progetto */
 .aggiornamenti { margin-bottom: 1.5em; }
-.aggiornamenti__progetto { margin: 1em 0 0.4em; font-size: 0.75em; color: #00adb5; text-transform: uppercase; letter-spacing: 0.08em; }
+/* intestazione del gruppo: icona e nome dell'app con il carattere del suo logo, collegata alla pagina del progetto */
+.aggiornamenti__progetto { display: flex; align-items: center; gap: 0.5em; flex-wrap: wrap; margin: 1em 0 0.3em; padding: 0.5em 0.7em; border: 1px solid #3d4553; border-radius: 8px; color: #eaeaea; text-decoration: none; }
+.aggiornamenti__progetto:hover { border-color: #00adb5; }
+.aggiornamenti__progetto img { width: 28px; height: 28px; border-radius: 6px; }
+.aggiornamenti__nome { font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif; font-weight: 900; font-size: 1.15em; }
+.aggiornamenti__descrizione { margin-inline-start: auto; font-size: 0.75em; color: #a8b0b6; }
+.aggiornamenti__progetto:hover .aggiornamenti__descrizione { color: #00adb5; }
+.aggiornamenti__altri { margin: 1em 0 0.4em; font-size: 0.9em; }
 .aggiornamenti__lista { margin: 0; padding: 0; list-style: none; }
 .aggiornamenti__lista li { margin: 0; padding: 0.55em 0; border-bottom: 1px solid #3d4553; }
 .aggiornamenti__lista a { font-weight: 600; color: #eaeaea; text-decoration: none; }

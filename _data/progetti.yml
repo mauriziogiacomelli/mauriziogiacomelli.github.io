@@ -1,0 +1,5 @@
+# Progetti a cui fanno riferimento gli articoli (campo "progetto"): pagina e icona mostrate nella home
+Job Tracker:
+  url: /lavori/job-tracker/
+  icona: /job-tracker/icons/icon-96x96.png
+  descrizione: "Articoli sullo sviluppo dell'app"
