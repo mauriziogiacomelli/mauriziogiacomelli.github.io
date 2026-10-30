@@ -19,15 +19,15 @@ amministrazione fino a [Job Tracker](/lavori/job-tracker/), la mia applicazione 
 - **Spring**: Spring Boot (fino alla 4), Spring MVC, Spring Security, Spring Cloud, Spring AOP / AspectJ
 - **Persistenza**: Hibernate / JPA, MyBatis, EJB 2/3
 - **Architetture**: microservizi (Eureka), API REST e SOAP, messaggistica con RabbitMQ
-- **Web tradizionale**: JSF (PrimeFaces, RichFaces), Struts 1/2, Servlet / JSP
-- **Altro**: Apache POI per i documenti Office
+- **Web tradizionale**: JSF (Facelets, PrimeFaces, RichFaces), Struts 1/2, Servlet / JSP
+- **Altro**: integrazione con sistemi IBM Host, Apache POI per i documenti Office
 
 ## Frontend
 
 - **Angular** 16–19: componenti standalone, signals, Angular Material, app installabili (PWA)
 - **AngularJS**, con ottimizzazione delle prestazioni su grandi volumi di dati
 - **React**, jQuery, Quill.js
-- TypeScript, JavaScript, HTML5, CSS
+- TypeScript, JavaScript, Node.js, HTML5, CSS
 
 ## Database
 
@@ -66,7 +66,7 @@ IntelliJ IDEA · NetBeans · JIRA · assistenti AI per lo sviluppo (Claude, Chat
 
 ## Metodo di lavoro
 
-- Analisi dei requisiti e stesura della documentazione funzionale
+- Analisi dei requisiti, reverse engineering di sistemi esistenti, documentazione tecnica e funzionale
 - Approccio Agile, gestione degli SLA
 - Rapporto diretto con il cliente finale
 - Coordinamento di un team di sviluppo (4 persone)
