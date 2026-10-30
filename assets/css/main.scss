@@ -28,8 +28,8 @@
 
 /* pulsanti: quello principale pieno, gli altri con il bordo nel colore del sito */
 .btn--large { font-size: 0.85em; }
-.btn--inverse { background: transparent; color: #eaeaea; border: 1px solid #00adb5; }
-.btn--inverse:hover { background: #00adb5; color: #252a34; }
+.btn--inverse, .btn--inverse:visited, .btn--contorno, .btn--contorno:visited { background: transparent; color: #eaeaea; border: 1px solid #00adb5; }
+.btn--inverse:hover, .btn--contorno:hover { background: #00adb5; color: #252a34; }
 
 /* elenchi di articoli: titoli chiari, turchesi al passaggio del mouse */
 .archive__item-title { font-size: 1.1em; }
@@ -62,5 +62,3 @@
 .home-sottotitolo { margin-bottom: 1.4em; font-size: 1.1em; color: #c9ced3; }
 .home-azioni { margin-top: 1.6em; }
 .home-azioni .btn { margin: 0 0.5em 0.6em 0; font-size: 0.85em; }
-.btn--contorno { background: transparent; color: #eaeaea; border: 1px solid #00adb5; }
-.btn--contorno:hover { background: #00adb5; color: #252a34; }
