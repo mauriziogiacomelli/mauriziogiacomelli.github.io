@@ -23,7 +23,7 @@ og_image: "/assets/images/bio-photo.jpg"
 author:
   name: "Maurizio Giacomelli"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Software Developer & IT Consultant · Java · Spring Boot · Angular · AngularJS"
+  bio: "Software Developer & IT Consultant, appassionato di tecnologia · Java · Spring Boot · Angular · AngularJS"
   location: "Trento, Italia"
   email: "mauriziogiacomelli@gmail.com" # aggiungi la tua email
   links:

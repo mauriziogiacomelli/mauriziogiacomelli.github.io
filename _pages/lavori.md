@@ -11,7 +11,7 @@ Una selezione di progetti personali che mostrano come lavoro: dall'analisi alla 
 
 ## Job Tracker
 
-**Applicazione web full stack per gestire una ricerca di lavoro**: un agente AI cerca e verifica nuove offerte due volte al giorno per ogni utente, secondo i suoi criteri; l'app tiene traccia delle candidature e del loro stato e invia un riepilogo via email.
+**Un'applicazione web che cerca offerte di lavoro al posto tuo**: un agente AI cerca e verifica nuove offerte due volte al giorno secondo i criteri di ogni utente; l'app tiene traccia delle candidature e invia un riepilogo per email. *Progettata e sviluppata da me in ogni parte: interfaccia, server, database e cloud.*
 
 [Prova la demo](https://mauriziogiacomelli.github.io/job-tracker-demo/){: .btn .btn--primary .btn--large}
 [Come è fatto](/lavori/job-tracker/){: .btn .btn--inverse .btn--large}

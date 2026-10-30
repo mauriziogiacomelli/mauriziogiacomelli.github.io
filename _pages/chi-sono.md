@@ -10,7 +10,7 @@ toc: true
 
 Sono Maurizio Giacomelli, sviluppatore software con sede a **Trento**, libero professionista (partita IVA) nel settore IT.
 
-Ho maturato solida esperienza nello sviluppo di **applicazioni enterprise Java** in contesti ad alta complessita, lavorando come collaboratore esterno su sistemi mission-critical per banche, telecomunicazioni, pubblica amministrazione e aziende private.
+Ho maturato solida esperienza nello sviluppo di **applicazioni enterprise Java** in contesti ad alta complessità, lavorando come collaboratore esterno su sistemi mission-critical per banche, telecomunicazioni, pubblica amministrazione e aziende private.
 
 ## Cosa faccio
 
@@ -26,7 +26,7 @@ Mi occupo di sviluppo full stack su applicazioni web enterprise:
 ## Il mio approccio
 
 - Modifiche **mirate e minimali** rispetto al codebase esistente
-- Rispetto dei pattern architetturali gia adottati
+- Rispetto dei pattern architetturali già adottati
 - Codice pulito e pronto per la produzione
 - Attenzione alle performance su grandi volumi di dati
 

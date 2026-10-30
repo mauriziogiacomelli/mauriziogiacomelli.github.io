@@ -28,7 +28,7 @@ Integrazione con sistemi aziendali esistenti: LDAP/Active Directory, sistemi di 
 
 ## Monitoring & Logging
 
-Implementazione di logging strutturato con **ELK Stack / Kibana**, propagazione del contesto MDC in architetture async, tracciabilita completa delle operazioni.
+Implementazione di logging strutturato con **ELK Stack / Kibana**, propagazione del contesto MDC in architetture async, tracciabilità completa delle operazioni.
 
 ## Documentazione & Release Management
 

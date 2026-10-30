@@ -10,11 +10,20 @@
 /* ===== Tutto il sito: stessa larghezza per intestazione e contenuto, testo piu' contenuto ===== */
 @media (min-width: 64em) {
   #main, .masthead__inner-wrap { max-width: 1140px; }
-  .sidebar { width: 230px; opacity: 1; }
-  .page { width: calc(100% - 270px); padding-inline-end: 250px; }
+  .sidebar { width: 250px; opacity: 1; }
+  .page { width: calc(100% - 290px); padding-inline-end: 250px; }
   .sidebar__right { margin-inline-end: -250px; width: 230px; }
 }
 .page__content, .archive { font-size: 0.85em; }
+
+/* da PC il nome sta gia' sotto la foto: niente nome nell'intestazione, foto e colonna di sinistra piu' grandi */
+@media (min-width: 64em) {
+  .masthead .site-title { display: none; }
+  .author__avatar img { width: 170px; max-width: 170px; aspect-ratio: 1; object-fit: cover; }
+  .sidebar .author__name { font-size: 1.15em; white-space: nowrap; }
+  .sidebar .author__bio { font-size: 1em; line-height: 1.5; }
+  .sidebar .author__urls li { font-size: 0.85em; }
+}
 .page__content h2 { font-size: 1.4em; }
 
 /* pulsanti: quello principale pieno, gli altri con il bordo nel colore del sito */
@@ -29,7 +38,7 @@
 
 /* ===== Home: niente indice a destra, il testo usa tutta la colonna ===== */
 @media (min-width: 64em) {
-  .layout--home .archive { width: calc(100% - 270px); padding-inline-end: 0; }
+  .layout--home .archive { width: calc(100% - 290px); padding-inline-end: 0; }
 }
 .layout--home .archive__subtitle { margin-top: 2.5em; }
 
