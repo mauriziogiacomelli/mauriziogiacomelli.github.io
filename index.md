@@ -9,8 +9,8 @@ excerpt: >-
 
 <h1 class="home-titolo">Sviluppatore Java full stack e consulente IT</h1>
 
-<p class="home-sottotitolo">Sviluppo software dal <strong>2004</strong>, libero professionista dal <strong>2016</strong>.
-Con base a Trento, <strong>disponibile da remoto in tutta Italia</strong>.</p>
+<p class="home-sottotitolo">Sviluppo software dal 2004, libero professionista dal 2016.
+Con base a Trento, disponibile da remoto in tutta Italia.</p>
 
 Sono specializzato in **Java** e applicazioni **enterprise**, con competenze full stack: dal backend
 Java / Spring Boot / microservizi al frontend Angular e AngularJS, dalla progettazione di database SQL Server,
