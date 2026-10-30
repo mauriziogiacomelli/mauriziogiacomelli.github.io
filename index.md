@@ -20,5 +20,5 @@ Lavoro come sviluppatore esterno su sistemi complessi per **banche**, **telecomu
 amministrazione** e **aziende private**.
 
 [Scopri i miei servizi](/servizi/){: .btn .btn--primary .btn--large}
-[Guarda un lavoro: Job Tracker](/lavori/job-tracker/){: .btn .btn--inverse .btn--large}
+[Un mio lavoro](/lavori/job-tracker/){: .btn .btn--inverse .btn--large}
 [Contattami](/contatti/){: .btn .btn--inverse .btn--large}
