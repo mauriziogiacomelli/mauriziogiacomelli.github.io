@@ -18,6 +18,10 @@ Sviluppo di interfacce web enterprise con **Angular** moderno (fino alla version
 
 Progettazione e ottimizzazione di query complesse, stored procedure, migration di schemi. Esperienza con **SQL Server** e ORM **MyBatis**.
 
+## Porting e manutenzione di software legacy
+
+Manutenzione correttiva ed evolutiva di applicazioni esistenti, anche datate o poco documentate, e **porting** verso versioni recenti di Java, framework e librerie. Interventi mirati che rispettano l'architettura esistente e riducono il rischio di regressioni.
+
 ## Integrazione Sistemi
 
 Integrazione con sistemi aziendali esistenti: LDAP/Active Directory, sistemi di identity management, generazione documenti PDF con **JasperReports**, report con **SSRS**.

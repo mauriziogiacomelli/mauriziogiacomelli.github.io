@@ -1,6 +1,7 @@
 ---
 title: "Partenza puntuale alle 7:30 con EventBridge Scheduler"
 excerpt: "Il giro di ricerca di Job Tracker partiva con 6-12 minuti di ritardo. Un timer AWS e una piccola Lambda lo fanno partire all'orario esatto, anche con l'ora legale."
+progetto: "Job Tracker"
 tags: [Job Tracker, AWS, EventBridge, Lambda]
 ---
 

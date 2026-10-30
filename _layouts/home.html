@@ -1,23 +1,27 @@
 ---
 layout: archive
 ---
-{% comment %}Copia del layout home di Minimal Mistakes 4.26: unica differenza il titolo "Aggiornamenti" al posto di "Articoli recenti".{% endcomment %}
+{% comment %}
+  Layout home di Minimal Mistakes 4.26 con la sezione "Aggiornamenti" compatta: articoli raggruppati per progetto
+  (campo "progetto" dell'articolo, "Altri articoli" se manca), titolo e data su una riga e una riga di sintesi.
+{% endcomment %}
 
 {{ content }}
 
 <h3 class="archive__subtitle">Aggiornamenti</h3>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
-</div>
-
-{% include paginator.html %}
+{% assign gruppi = site.posts | group_by: "progetto" %}
+{% for gruppo in gruppi %}
+  <section class="aggiornamenti">
+    <h4 class="aggiornamenti__progetto">{% if gruppo.name != "" %}{{ gruppo.name }}{% else %}Altri articoli{% endif %}</h4>
+    <ul class="aggiornamenti__lista">
+      {% for post in gruppo.items %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+          <p>{{ post.excerpt | strip_html | strip | truncatewords: 22 }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

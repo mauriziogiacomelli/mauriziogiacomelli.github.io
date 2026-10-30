@@ -1,0 +1,50 @@
+---
+# file principale del tema: importa skin e tema, poi le regole del sito
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ===== Tutto il sito: stessa larghezza per intestazione e contenuto, testo piu' contenuto ===== */
+@media (min-width: 64em) {
+  #main, .masthead__inner-wrap { max-width: 1140px; }
+  .sidebar { width: 230px; opacity: 1; }
+  .page { width: calc(100% - 270px); padding-inline-end: 250px; }
+  .sidebar__right { margin-inline-end: -250px; width: 230px; }
+}
+.page__content, .archive { font-size: 0.85em; }
+.page__content h2 { font-size: 1.4em; }
+
+/* pulsanti: quello principale pieno, gli altri con il bordo nel colore del sito */
+.btn--large { font-size: 0.85em; }
+.btn--inverse { background: transparent; color: #eaeaea; border: 1px solid #00adb5; }
+.btn--inverse:hover { background: #00adb5; color: #252a34; }
+
+/* elenchi di articoli: titoli chiari, turchesi al passaggio del mouse */
+.archive__item-title { font-size: 1.1em; }
+.archive__item-title a { color: #eaeaea; text-decoration: none; }
+.archive__item-title a:hover { color: #00adb5; text-decoration: underline; }
+
+/* ===== Home: niente indice a destra, il testo usa tutta la colonna ===== */
+@media (min-width: 64em) {
+  .layout--home .archive { width: calc(100% - 270px); padding-inline-end: 0; }
+}
+.layout--home .archive__subtitle { margin-top: 2.5em; }
+
+/* Aggiornamenti in home: compatti e raggruppati per progetto */
+.aggiornamenti { margin-bottom: 1.5em; }
+.aggiornamenti__progetto { margin: 1em 0 0.4em; font-size: 0.75em; color: #00adb5; text-transform: uppercase; letter-spacing: 0.08em; }
+.aggiornamenti__lista { margin: 0; padding: 0; list-style: none; }
+.aggiornamenti__lista li { margin: 0; padding: 0.55em 0; border-bottom: 1px solid #3d4553; }
+.aggiornamenti__lista a { font-weight: 600; color: #eaeaea; text-decoration: none; }
+.aggiornamenti__lista a:hover { color: #00adb5; text-decoration: underline; }
+.aggiornamenti__lista time { margin-inline-start: 0.6em; font-size: 0.75em; color: #a8b0b6; white-space: nowrap; }
+.aggiornamenti__lista p { margin: 0.15em 0 0; font-size: 0.8em; color: #a8b0b6; line-height: 1.4; }
+.home-titolo { margin: 0 0 0.35em; font-size: 1.9em; line-height: 1.15; }
+.home-sottotitolo { margin-bottom: 1.4em; font-size: 1.1em; color: #a8b0b6; }
+.home-azioni { margin-top: 1.6em; }
+.home-azioni .btn { margin: 0 0.5em 0.6em 0; font-size: 0.85em; }
+.btn--contorno { background: transparent; color: #eaeaea; border: 1px solid #00adb5; }
+.btn--contorno:hover { background: #00adb5; color: #252a34; }

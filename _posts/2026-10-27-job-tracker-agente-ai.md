@@ -1,6 +1,7 @@
 ---
 title: "Job Tracker: un agente AI che cerca lavoro al posto mio"
 excerpt: "Perché ho costruito Job Tracker, cosa fa e con quali tecnologie: Angular, Spring Boot su AWS Lambda e un agente AI che due volte al giorno cerca offerte per me."
+progetto: "Job Tracker"
 tags: [Job Tracker, Spring Boot, Angular, AWS, AI]
 ---
 

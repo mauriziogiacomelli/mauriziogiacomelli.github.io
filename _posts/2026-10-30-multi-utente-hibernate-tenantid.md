@@ -1,6 +1,7 @@
 ---
 title: "Da un utente a più utenti con @TenantId di Hibernate"
 excerpt: "Job Tracker era nato per una persona sola. Per aprirlo ad altri senza rischiare di mostrare a qualcuno i dati di un altro ho usato la multi-tenancy di Hibernate: filtro e assegnazione automatici, verificati da test."
+progetto: "Job Tracker"
 tags: [Job Tracker, Java, Spring Boot, Hibernate, Sicurezza]
 ---
 

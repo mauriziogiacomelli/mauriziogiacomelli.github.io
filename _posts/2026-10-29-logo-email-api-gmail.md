@@ -1,6 +1,7 @@
 ---
 title: "Il logo nelle email inviate con l'API di Gmail"
 excerpt: "Immagini esterne tolte, sfondi spariti: come ho portato il logo di Job Tracker nell'email di riepilogo con un allegato in linea e cid:att0."
+progetto: "Job Tracker"
 tags: [Job Tracker, Email, Gmail, HTML]
 ---
 
