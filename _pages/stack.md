@@ -26,7 +26,7 @@ amministrazione fino a [Job Tracker](/lavori/job-tracker/), la mia applicazione 
 
 - **Angular** 16–19: componenti standalone, signals, Angular Material, app installabili (PWA)
 - **AngularJS**, con ottimizzazione delle prestazioni su grandi volumi di dati
-- **React**, jQuery, Quill.js
+- jQuery, Quill.js; React in passato, su un progetto bancario
 - TypeScript, JavaScript, Node.js, HTML5, CSS
 
 ## Database
