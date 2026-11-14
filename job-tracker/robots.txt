@@ -1,0 +1,5 @@
+# Job Tracker: le pagine pubbliche si possono indicizzare, l'app dietro l'accesso non mostra niente.
+User-agent: *
+Allow: /
+
+Sitemap: https://jobtrackerapp.it/sitemap.xml
