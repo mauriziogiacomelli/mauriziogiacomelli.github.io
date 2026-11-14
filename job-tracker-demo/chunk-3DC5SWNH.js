@@ -1,1 +1,0 @@
-var e="bWF1cml6aW9naWFjb21lbGxp",t="Z21haWwuY29t";function $(n){return`${atob(e)}${n?`+${n}`:""}@${atob(t)}`}var c="am9idHJhY2tldA==";function s(n){return`${atob(c)}${n?`+${n}`:""}@${atob(t)}`}function a(n,i,o=""){let r=o?`&body=${encodeURIComponent(o)}`:"";return`mailto:${$(n)}?subject=${encodeURIComponent(i)}${r}`}export{$ as a,s as b,a as c};
