@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Tracker · Giro guidato</title>
+  <meta name="description" content="Giro guidato di Job Tracker: l'agente che cerca per te le offerte di lavoro IT, due volte al giorno.">
+  <meta name="theme-color" content="#252a34">
+  <link rel="icon" href="../logo.svg" type="image/svg+xml">
+  <!-- stessi caratteri e icone dell'app -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="stile.css?v=5">
+</head>
+<body>
+<!--
+  Pagina statica: riproduce le schermate dell'app con dati di esempio (aziende inventate) e le spiega passo per passo.
+  Tutto sta dentro il "palco", che tour.js ridimensiona e scala: cosi' una registrazione a 1920x1080 (o 1080x1920 con
+  ?formato=verticale) viene identica a ogni giro. Parametri: vedi l'intestazione di tour.js.
+-->
+<div id="palco">
+  <div class="struttura">
+    <div class="banner-demo" role="note">
+      <span><strong>Giro guidato</strong> con dati di esempio. L'app vera è su invito.</span>
+      <a class="richiedi-prova esterno" href="../helloworld"><span class="mi" aria-hidden="true">rocket_launch</span> Richiedi la prova gratuita</a>
+    </div>
+
+    <div class="app" id="app">
+      <!-- PC: menu laterale fisso -->
+      <aside class="menu" aria-label="Menu">
+        <div class="marchio"><img class="logo" src="../logo.svg" alt="" width="28" height="28"><span class="nome-marchio">Job Tracker</span></div>
+        <nav class="voci" aria-label="Sezioni">
+          <a href="#" class="voce" data-vai="dashboard"><span class="mi" aria-hidden="true">dashboard</span><span>Dashboard</span></a>
+          <a href="#" class="voce" data-vai="offerte"><span class="mi" aria-hidden="true">work_outline</span><span>Offerte</span></a>
+          <a href="#" class="voce" data-vai="candidature"><span class="mi" aria-hidden="true">send</span><span>Candidature</span></a>
+          <a href="#" class="voce" data-vai="ricerca"><span class="mi" aria-hidden="true">manage_search</span><span>Ricerca</span></a>
+          <a href="#" class="voce" data-vai="impostazioni"><span class="mi" aria-hidden="true">tune</span><span>Impostazioni</span></a>
+          <a href="#" class="voce"><span class="mi" aria-hidden="true">group</span><span>Utenti</span></a>
+        </nav>
+        <div class="utente">
+          <span class="secondario email-utente">demo@example.com</span>
+          <button type="button" class="pulsante contorno"><span class="mi" aria-hidden="true">logout</span> Esci</button>
+        </div>
+      </aside>
+
+      <!-- Telefono: barra in alto con il marchio -->
+      <header class="barra-alta">
+        <div class="marchio"><img class="logo" src="../logo.svg" alt="" width="28" height="28"><span class="nome-marchio">Job Tracker</span></div>
+        <span class="mi account" aria-hidden="true">account_circle</span>
+      </header>
+
+      <main class="pagina" id="pagina">
+        <div class="contenuto">
+
+          <!-- ============ DASHBOARD ============ -->
+          <section class="schermata" data-schermata="dashboard" aria-label="Dashboard">
+            <div class="intestazione"><h1>Dashboard</h1></div>
+
+            <div class="numeri" id="numeri">
+              <a class="numero" href="#"><span class="valore">8</span><span class="secondario">offerte segnalate</span></a>
+              <a class="numero" href="#"><span class="valore">5</span><span class="secondario">negli ultimi 7 giorni</span></a>
+              <a class="numero" href="#"><span class="valore">3</span><span class="secondario">candidature aperte</span></a>
+              <a class="numero" href="#"><span class="valore">1</span><span class="secondario">in fase di colloquio</span></a>
+            </div>
+
+            <div class="intestazione sezione" id="testa-nuove">
+              <h2><span class="mi accento" aria-hidden="true">fiber_new</span> Nuove da vedere <span class="etichetta conta-nuove">2</span></h2>
+              <div class="azioni-sezione">
+                <button type="button" class="pulsante testo"><span class="mi" aria-hidden="true">done_all</span> Segna tutte come viste</button>
+              </div>
+            </div>
+            <div class="griglia-schede" id="nuove" data-offerte="1,3"></div>
+
+            <h2 class="titolo-sezione">Da sollecitare</h2>
+            <div class="mat-card" id="da-sollecitare">
+              <div class="mat-card-contenuto">
+                <a class="riga" href="#">
+                  <span><strong>Greenfield Energy</strong> · Spring Boot Developer – API per IoT</span>
+                  <span class="etichetta">Inviata</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="intestazione sezione">
+              <h2>Ultime offerte</h2>
+              <a class="pulsante testo" href="#">Vedi tutte <span class="mi" aria-hidden="true">arrow_forward</span></a>
+            </div>
+            <div class="griglia-schede" data-offerte="1,5,6,3,4"></div>
+          </section>
+
+          <!-- ============ OFFERTE ============ -->
+          <section class="schermata" data-schermata="offerte" aria-label="Offerte" hidden>
+            <div class="intestazione">
+              <h1>Offerte</h1>
+              <span class="secondario">5 offerte</span>
+            </div>
+
+            <div class="filtri">
+              <div class="campo riga-intera" id="filtro-ricerca">
+                <span class="nome-campo">Ricerca</span>
+                <div class="cornice">
+                  <span class="valore"><span class="mi stella" aria-hidden="true">star</span> Java full stack da remoto</span>
+                  <span class="mi freccia-giu" aria-hidden="true">arrow_drop_down</span>
+                </div>
+                <div class="tendina" id="tendina-ricerca">
+                  <div class="opzione-tendina scelta grassetto"><span class="mi stella" aria-hidden="true">star</span> Java full stack da remoto</div>
+                  <div class="opzione-tendina">Solo Trentino, anche in sede</div>
+                  <div class="opzione-tendina">Tutte le ricerche</div>
+                </div>
+              </div>
+              <div class="campo riga-intera vuoto con-prefisso" id="filtro-cerca">
+                <span class="nome-campo">Cerca azienda o ruolo</span>
+                <div class="cornice">
+                  <span class="mi prefisso" aria-hidden="true">search</span>
+                  <span class="valore scritto" id="testo-cerca"></span>
+                </div>
+              </div>
+              <div class="campo vuoto" id="filtro-tipo">
+                <span class="nome-campo">Tipo</span>
+                <div class="cornice"><span class="valore"></span><span class="mi freccia-giu" aria-hidden="true">arrow_drop_down</span></div>
+                <div class="tendina" id="tendina-tipo">
+                  <div class="opzione-tendina scelta">Tutti</div>
+                  <div class="opzione-tendina">Freelance / P.IVA</div>
+                  <div class="opzione-tendina">Dipendente</div>
+                  <div class="opzione-tendina">Spunto</div>
+                </div>
+              </div>
+              <div class="campo vuoto" id="filtro-match">
+                <span class="nome-campo">Match</span>
+                <div class="cornice"><span class="valore"></span><span class="mi freccia-giu" aria-hidden="true">arrow_drop_down</span></div>
+                <div class="tendina" id="tendina-match">
+                  <div class="opzione-tendina scelta">Tutti</div>
+                  <div class="opzione-tendina">Alto</div>
+                  <div class="opzione-tendina">Medio</div>
+                  <div class="opzione-tendina">Basso</div>
+                </div>
+              </div>
+              <div class="campo vuoto" id="filtro-stato">
+                <span class="nome-campo">Stato</span>
+                <div class="cornice"><span class="valore"></span><span class="mi freccia-giu" aria-hidden="true">arrow_drop_down</span></div>
+                <div class="tendina larga" id="tendina-stato">
+                  <div class="opzione-tendina scelta">Tutti tranne scartate</div>
+                  <div class="opzione-tendina">Attiva</div>
+                  <div class="opzione-tendina">Chiusa</div>
+                  <div class="opzione-tendina">Non verificata</div>
+                  <div class="opzione-tendina">Scartata da me</div>
+                  <div class="opzione-tendina">Scartata dall'agente</div>
+                </div>
+              </div>
+              <div class="campo" id="filtro-ordina">
+                <span class="nome-campo">Ordina per</span>
+                <div class="cornice"><span class="valore">Trovate di recente</span><span class="mi freccia-giu" aria-hidden="true">arrow_drop_down</span></div>
+                <div class="tendina a-destra" id="tendina-ordina">
+                  <div class="opzione-tendina scelta">Trovate di recente</div>
+                  <div class="opzione-tendina">Segnalate di recente</div>
+                  <div class="opzione-tendina">Pubblicate di recente</div>
+                  <div class="opzione-tendina">Azienda (A-Z)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="interruttori" id="interruttori">
+              <span class="interruttore"><span class="binario" aria-hidden="true"></span>Solo le nuove (non ancora aperte)</span>
+              <span class="interruttore"><span class="binario" aria-hidden="true"></span>Anche quelle a cui mi sono candidato</span>
+            </div>
+
+            <div class="griglia-schede" id="elenco-offerte" data-offerte="1,5,6,3,4"></div>
+          </section>
+
+          <!-- ============ DETTAGLIO DI UN'OFFERTA ============ -->
+          <section class="schermata" data-schermata="dettaglio" aria-label="Dettaglio dell'offerta" hidden>
+            <a class="pulsante testo indietro" href="#"><span class="mi" aria-hidden="true">arrow_back</span> Offerte</a>
+
+            <div class="intestazione dettaglio-testa">
+              <div>
+                <h1>Backend Engineer Java 21 – migrazione cloud</h1>
+                <div class="secondario">Logistica Delta</div>
+              </div>
+              <div class="azioni" id="azioni-dettaglio">
+                <a class="pulsante contorno" href="#"><span class="mi" aria-hidden="true">open_in_new</span> Apri annuncio</a>
+                <button type="button" class="pulsante pieno"><span class="mi" aria-hidden="true">send</span> Mi sono candidato</button>
+                <button type="button" class="pulsante contorno"><span class="mi" aria-hidden="true">block</span> Non mi interessa</button>
+              </div>
+            </div>
+
+            <div class="mat-card">
+              <div class="mat-card-contenuto spazioso">
+                <dl class="campi">
+                  <dt>Tipo</dt><dd>Freelance / P.IVA</dd>
+                  <dt>Pubblicata il</dt><dd>14/11/2026</dd>
+                  <dt>Segnalata il</dt><dd>15/11/2026</dd>
+                  <dt>Modalità</dt><dd>Full remote</dd>
+                  <dt>Contratto</dt><dd>Freelance</dd>
+                  <dt>Compenso</dt><dd>250 €/giorno</dd>
+                  <dt id="dt-match">Match</dt><dd id="dd-match">medio</dd>
+                  <dt id="dt-gap">Gap rispetto al profilo</dt><dd id="dd-gap">Kafka richiesto, Kubernetes nice to have</dd>
+                  <dt id="dt-verifica">Verifica</dt><dd id="dd-verifica">da risultati di ricerca</dd>
+                </dl>
+
+                <div class="campo stato-annuncio" id="stato-annuncio">
+                  <span class="nome-campo">Stato annuncio</span>
+                  <div class="cornice"><span class="valore">Attiva</span><span class="mi freccia-giu" aria-hidden="true">arrow_drop_down</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============ CANDIDATURE ============ -->
+          <section class="schermata" data-schermata="candidature" aria-label="Candidature" hidden>
+            <div class="intestazione">
+              <h1>Candidature</h1>
+              <div class="gruppo" id="vista-candidature" role="group" aria-label="Filtro candidature">
+                <span class="opzione scelta"><span class="mi" aria-hidden="true">check</span>Aperte</span>
+                <span class="opzione">Chiuse</span>
+                <span class="opzione">Tutte</span>
+              </div>
+            </div>
+
+            <div class="griglia-schede" id="elenco-candidature">
+              <a class="collegamento" href="#" id="cand-orbita">
+                <div class="mat-card">
+                  <div class="mat-card-testa">
+                    <div class="mat-card-titolo">Orbita Telecom</div>
+                    <div class="mat-card-sottotitolo">Java Architect – piattaforma VoIP</div>
+                  </div>
+                  <div class="mat-card-contenuto">
+                    <div class="etichette"><span class="etichetta arancio">Colloquio</span></div>
+                    <div class="secondario">Candidato il 01/11/2026</div>
+                    <p class="prossimo"><strong>Prossimo passo:</strong> Colloquio tecnico giovedì alle 15:00</p>
+                  </div>
+                </div>
+              </a>
+              <a class="collegamento" href="#" id="cand-greenfield">
+                <div class="mat-card">
+                  <div class="mat-card-testa">
+                    <div class="mat-card-titolo">Greenfield Energy</div>
+                    <div class="mat-card-sottotitolo">Spring Boot Developer – API per IoT</div>
+                  </div>
+                  <div class="mat-card-contenuto">
+                    <div class="etichette">
+                      <span class="etichetta">Inviata</span>
+                      <span class="etichetta arancio" id="sollecito"><span class="mi" aria-hidden="true">schedule</span> da sollecitare</span>
+                    </div>
+                    <div class="secondario">Candidato il 06/11/2026</div>
+                  </div>
+                </div>
+              </a>
+              <a class="collegamento" href="#" id="cand-aurora">
+                <div class="mat-card">
+                  <div class="mat-card-testa">
+                    <div class="mat-card-titolo">Fintech Aurora</div>
+                    <div class="mat-card-sottotitolo">Full Stack Developer Java / Angular</div>
+                  </div>
+                  <div class="mat-card-contenuto">
+                    <div class="etichette"><span class="etichetta">Inviata</span></div>
+                    <div class="secondario">Candidato il 18/11/2026</div>
+                    <p class="prossimo"><strong>Prossimo passo:</strong> Attendere la risposta del recruiter</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <!-- ============ RICERCA ============ -->
+          <section class="schermata" data-schermata="ricerca" aria-label="Ricerca" hidden>
+            <div class="intestazione">
+              <h1>Ricerca</h1>
+              <a class="pulsante contorno" href="#"><span class="mi" aria-hidden="true">help_outline</span> Come funziona</a>
+            </div>
+
+            <section class="agente pronta" id="ricerca-agente" aria-label="Ricerca predefinita">
+              <div class="agente-testa">
+                <span class="stella-grande" aria-hidden="true"><span class="mi">star</span><span class="mi spunta">check_circle</span></span>
+                <div class="agente-titoli">
+                  <span class="sopratitolo">Ricerca predefinita · pronta</span>
+                  <h2>Java full stack da remoto</h2>
+                </div>
+              </div>
+              <p class="riassunto">100% remoto o Ibrido · Trentino-Alto Adige · Partita IVA / Freelance, Dipendente · da 250 €/giorno · RAL da 45.000 € · annunci fino a 30 giorni</p>
+              <div class="parole">
+                <span class="etichetta accento">Java full stack</span>
+                <span class="etichetta accento">Spring Boot</span>
+                <span class="etichetta accento">Angular</span>
+              </div>
+              <div class="cerca-ora">
+                <span class="stato-giro"><span class="mi ok" aria-hidden="true">check_circle</span> Ultima ricerca 18/11 07:42: <strong>2 offerte nuove</strong>
+                  <a class="vedi-nuove" href="#">Vedi le nuove</a></span>
+                <button type="button" class="pulsante contorno chiaro" id="cerca-ora"><span class="mi" aria-hidden="true">bolt</span> Cerca ora</button>
+              </div>
+            </section>
+
+            <section class="elenco-ricerche" aria-label="Le tue ricerche">
+              <div class="elenco-testa">
+                <h2>Le tue ricerche</h2>
+                <button type="button" class="pulsante contorno"><span class="mi" aria-hidden="true">add</span> Nuova ricerca</button>
+              </div>
+              <div class="salvate">
+                <span class="salvata attiva"><span class="mi" aria-hidden="true">star</span><span>Java full stack da remoto</span><span class="badge">predefinita</span></span>
+                <span class="salvata"><span>Solo Trentino, anche in sede</span></span>
+              </div>
+            </section>
+
+            <section class="blocco testa-modulo">
+              <div class="riga-titolo">
+                <div class="campo nome-ricerca">
+                  <span class="nome-campo">Nome della ricerca</span>
+                  <div class="cornice"><span class="valore">Java full stack da remoto</span></div>
+                </div>
+                <span class="etichetta accento"><span class="mi" aria-hidden="true">star</span>predefinita: la usa l'agente</span>
+                <button type="button" class="pulsante contorno"><span class="mi" aria-hidden="true">backspace</span> Svuota tutti i campi</button>
+              </div>
+            </section>
+
+            <section class="blocco" id="da-dove">
+              <h2>Da dove parti?</h2>
+              <div class="gruppo">
+                <span class="opzione"><span class="mi" aria-hidden="true">auto_fix_high</span>Da una frase</span>
+                <span class="opzione"><span class="mi" aria-hidden="true">description</span>Dal CV</span>
+                <span class="opzione scelta"><span class="mi" aria-hidden="true">edit</span>A mano</span>
+              </div>
+              <p class="secondario">Compila direttamente i campi qui sotto.</p>
+            </section>
+
+            <div class="griglia-ricerca">
+              <section class="blocco" id="cosa-cercare">
+                <h2>Cosa cercare</h2>
+                <div class="campo">
+                  <span class="nome-campo">Ruoli e parole chiave</span>
+                  <div class="cornice chip-griglia">
+                    <span class="chip">Java full stack <span class="mi" aria-hidden="true">cancel</span></span>
+                    <span class="chip">Spring Boot <span class="mi" aria-hidden="true">cancel</span></span>
+                    <span class="chip">Angular <span class="mi" aria-hidden="true">cancel</span></span>
+                    <span class="segnaposto">es. Spring Boot, poi Invio</span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="blocco" id="dove-e-come">
+                <h2>Dove e come</h2>
+                <span class="campo-titolo">Modalità di lavoro (nessuna scelta = tutte)</span>
+                <div class="gruppo">
+                  <span class="opzione scelta"><span class="mi" aria-hidden="true">check</span>100% remoto</span>
+                  <span class="opzione scelta"><span class="mi" aria-hidden="true">check</span>Ibrido</span>
+                  <span class="opzione">In sede</span>
+                </div>
+                <div class="affiancati">
+                  <div class="campo">
+                    <span class="nome-campo">Max giorni in sede al mese</span>
+                    <div class="cornice"><span class="valore">2</span></div>
+                  </div>
+                  <div class="campo">
+                    <span class="nome-campo">Località accettate</span>
+                    <div class="cornice"><span class="valore">Trentino-Alto Adige</span></div>
+                  </div>
+                </div>
+                <span class="campo-titolo">Contratto (nessuna scelta = tutti)</span>
+                <div class="gruppo">
+                  <span class="opzione scelta"><span class="mi" aria-hidden="true">check</span>Partita IVA / Freelance</span>
+                  <span class="opzione scelta"><span class="mi" aria-hidden="true">check</span>Dipendente</span>
+                </div>
+                <div class="affiancati">
+                  <div class="campo">
+                    <span class="nome-campo">Compenso minimo</span>
+                    <div class="cornice"><span class="valore">250</span><span class="suffisso">€/giorno</span></div>
+                  </div>
+                  <div class="campo">
+                    <span class="nome-campo">RAL minima</span>
+                    <div class="cornice"><span class="valore">45000</span><span class="suffisso">€/anno</span></div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="blocco largo" id="altri-filtri">
+                <div class="apri-altri">
+                  <span class="mi" aria-hidden="true">expand_less</span>
+                  <span>Altri filtri</span>
+                  <span class="etichetta accento">3 attivi</span>
+                </div>
+                <div class="altri-campi">
+                  <div class="campo">
+                    <span class="nome-campo">Parole da escludere</span>
+                    <div class="cornice chip-griglia">
+                      <span class="chip">stage <span class="mi" aria-hidden="true">cancel</span></span>
+                      <span class="segnaposto">es. stage</span>
+                    </div>
+                  </div>
+                  <span class="interruttore acceso"><span class="binario" aria-hidden="true"><span class="mi">check</span></span>Escludi ruoli junior</span>
+                  <div class="campo corto">
+                    <span class="nome-campo">Annunci pubblicati da al massimo</span>
+                    <div class="cornice"><span class="valore">30</span><span class="suffisso">giorni</span></div>
+                    <div class="aiuto">Se lo lasci vuoto: 30 giorni</div>
+                  </div>
+                  <div class="campo">
+                    <span class="nome-campo">Aziende da non proporre</span>
+                    <div class="cornice chip-griglia">
+                      <span class="chip">Meridiana Assicurazioni <span class="mi" aria-hidden="true">cancel</span></span>
+                      <span class="segnaposto">Nome azienda, poi Invio</span>
+                    </div>
+                    <div class="aiuto">Le offerte per cui ti sei già candidato non vengono riproposte; gli altri annunci della stessa azienda sì.</div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="blocco largo" id="profilo">
+                <h2>Profilo</h2>
+                <div class="campo">
+                  <span class="nome-campo">Competenze ed esperienza</span>
+                  <div class="cornice area-testo">Sviluppatore Java full stack con 10+ anni di esperienza: Java 21, Spring Boot, microservizi, Angular, PostgreSQL, Docker. In crescita su Kubernetes e AWS.</div>
+                  <div class="aiuto">Usato per valutare quanto ogni offerta corrisponde a te (match alto, medio, basso).</div>
+                </div>
+              </section>
+            </div>
+
+            <div class="azioni-modulo">
+              <button type="button" class="pulsante contorno spento"><span class="mi" aria-hidden="true">save</span> Salva</button>
+              <button type="button" class="pulsante contorno"><span class="mi" aria-hidden="true">bolt</span> Salva e cerca ora</button>
+              <button type="button" class="pulsante contorno"><span class="mi" aria-hidden="true">more_horiz</span> Altro</button>
+            </div>
+          </section>
+
+          <!-- ============ IMPOSTAZIONI ============ -->
+          <section class="schermata" data-schermata="impostazioni" aria-label="Impostazioni email" hidden>
+            <div class="intestazione"><h1>Impostazioni email</h1></div>
+            <p class="secondario premessa">
+              La ricerca gira alle 7:30 e alle 19:30 per i giri con l'email accesa: se ne spegni una, quel giro non si fa.
+              In più puoi cercare con "Cerca ora", nei limiti del tuo piano.
+            </p>
+
+            <div class="colonne" id="colonne-email">
+              <div class="mat-card" id="scheda-quando">
+                <div class="mat-card-testa"><div class="mat-card-titolo">Quando</div></div>
+                <div class="mat-card-contenuto modulo">
+                  <span class="interruttore acceso"><span class="binario" aria-hidden="true"><span class="mi">check</span></span>Email del mattino (7:30)</span>
+                  <span class="interruttore"><span class="binario" aria-hidden="true"></span>Email della sera (19:30)</span>
+                  <p class="destinatario">Le email arrivano a <strong>demo@example.com</strong>, l'indirizzo del tuo account.</p>
+                  <div class="campo">
+                    <span class="nome-campo">Match minimo nell'email</span>
+                    <div class="cornice"><span class="valore">Medio o alto</span><span class="mi freccia-giu" aria-hidden="true">arrow_drop_down</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mat-card" id="scheda-sezioni">
+                <div class="mat-card-testa"><div class="mat-card-titolo">Sezioni dell'email</div></div>
+                <div class="mat-card-contenuto modulo">
+                  <span class="interruttore acceso"><span class="binario" aria-hidden="true"><span class="mi">check</span></span>Nuove offerte a Partita IVA / Freelance</span>
+                  <span class="interruttore acceso"><span class="binario" aria-hidden="true"><span class="mi">check</span></span>Nuove offerte da dipendente</span>
+                  <span class="interruttore acceso"><span class="binario" aria-hidden="true"><span class="mi">check</span></span>Già segnalate negli ultimi 7 giorni</span>
+                  <span class="interruttore acceso"><span class="binario" aria-hidden="true"><span class="mi">check</span></span>Le tue candidature</span>
+                  <span class="interruttore"><span class="binario" aria-hidden="true"></span>Spunti da approfondire</span>
+                  <span class="interruttore"><span class="binario" aria-hidden="true"></span>Offerte scartate, con il motivo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="azioni-modulo">
+              <button type="button" class="pulsante pieno spento">Salva</button>
+              <button type="button" class="pulsante contorno" id="apri-anteprima">Anteprima email</button>
+              <span class="secondario">Ultima modifica: 15/11/2026 19:20</span>
+            </div>
+          </section>
+
+        </div>
+      </main>
+
+      <!-- Telefono: navigazione in basso, a portata di pollice -->
+      <nav class="barra-bassa" aria-label="Sezioni">
+        <a href="#" class="voce-bassa" data-vai="dashboard"><span class="mi" aria-hidden="true">dashboard</span><span>Dashboard</span></a>
+        <a href="#" class="voce-bassa" data-vai="offerte"><span class="mi" aria-hidden="true">work_outline</span><span>Offerte</span></a>
+        <a href="#" class="voce-bassa" data-vai="candidature"><span class="mi" aria-hidden="true">send</span><span>Candidature</span></a>
+        <a href="#" class="voce-bassa" data-vai="ricerca"><span class="mi" aria-hidden="true">manage_search</span><span>Ricerca</span></a>
+        <a href="#" class="voce-bassa" data-vai="impostazioni"><span class="mi" aria-hidden="true">tune</span><span>Impostazioni</span></a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Finestra "Anteprima dell'email", come quella che si apre da Impostazioni -->
+  <div class="finestra-sfondo" id="finestra-email" hidden>
+    <div class="finestra" id="finestra-email-corpo" role="document" aria-label="Anteprima dell'email">
+      <h2 class="finestra-titolo">Anteprima dell'email</h2>
+      <div class="finestra-contenuto">
+        <div class="gruppo">
+          <span class="opzione scelta"><span class="mi" aria-hidden="true">check</span>Mattina (7:30)</span>
+          <span class="opzione">Sera (19:30)</span>
+        </div>
+        <p class="oggetto"><strong>Oggetto:</strong> Job Tracker · mattina di oggi: 2 nuove offerte</p>
+        <!-- l'email di esempio della demo (dati-demo.ts, riepilogoDemo), senza la riga finale con i dati del titolare -->
+        <div class="email" id="email-esempio">
+          <div style="margin:0;padding:20px 12px;background:#f6f8f9;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#202124">
+            <table role="presentation" width="600" style="max-width:600px;width:100%;margin:0 auto;background:#fff;border-radius:10px"><tr><td style="padding:24px">
+              <div style="font-size:17px;margin-bottom:16px;color:#252a34;font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;font-weight:900"><img src="../logo.svg" width="28" height="28" alt="JT" style="vertical-align:middle;margin-right:8px"><span style="vertical-align:middle">Job Tracker</span></div>
+              <p style="font-size:15px">Ciao,</p>
+              <p style="font-size:15px">Stamattina ho trovato 2 nuove offerte per la tua ricerca «Java full stack da remoto».</p>
+              <p><a href="#" style="display:inline-block;border:2px solid;border-color:#00adb5 #c792ea #c792ea #00adb5;color:#252a34;text-decoration:none;padding:9px 18px;border-radius:8px;font-weight:700;font-size:14px">Apri Job Tracker</a></p>
+              <h2 style="font-size:17px;margin:28px 0 6px;color:#202124">Nuove offerte</h2>
+              <table role="presentation" width="100%" style="border-collapse:collapse;margin:0 0 10px;border:1px solid #dadce0;border-radius:8px">
+                <tr><td style="padding:12px 14px"><div style="font-size:12px;color:#5f6368;text-transform:uppercase;letter-spacing:.04em">Nordlicht Software</div>
+                <div style="font-size:16px;font-weight:600;margin:2px 0 4px;color:#202124">Senior Java Developer – Spring Boot e microservizi</div>
+                <div style="font-size:14px;color:#3c4043">100% remoto · P.IVA, 12 mesi · 300-350 €/giorno</div>
+                <div style="font-size:13px;margin-top:4px;color:#00838f">Corrispondenza con il tuo profilo: alta</div>
+                <div style="margin-top:8px;font-size:14px"><a href="#" style="color:#00838f;font-weight:600">Apri nell'app</a></div></td></tr></table>
+              <table role="presentation" width="100%" style="border-collapse:collapse;margin:0 0 10px;border:1px solid #dadce0;border-radius:8px">
+                <tr><td style="padding:12px 14px"><div style="font-size:12px;color:#5f6368;text-transform:uppercase;letter-spacing:.04em">Logistica Delta</div>
+                <div style="font-size:16px;font-weight:600;margin:2px 0 4px;color:#202124">Backend Engineer Java 21 – migrazione cloud</div>
+                <div style="font-size:14px;color:#3c4043">Full remote · Freelance · 250 €/giorno</div>
+                <div style="font-size:13px;margin-top:4px;color:#00838f">Corrispondenza con il tuo profilo: media</div>
+                <div style="margin-top:8px;font-size:14px"><a href="#" style="color:#00838f;font-weight:600">Apri nell'app</a></div></td></tr></table>
+              <h2 style="font-size:17px;margin:28px 0 6px;color:#202124">Le tue candidature</h2>
+              <p style="font-size:14px">Orbita Telecom · Java Architect<br><span style="color:#5f6368;font-size:13px">inviata 17 giorni fa: potresti mandare un sollecito</span></p>
+              <hr style="border:none;border-top:1px solid #dadce0;margin:28px 0 12px">
+              <p style="font-size:12px;color:#5f6368">Ricevi questa email perché hai attivato il riepilogo in Job Tracker. Puoi cambiarla o disattivarla in Impostazioni.</p>
+            </td></tr></table>
+          </div>
+        </div>
+      </div>
+      <div class="finestra-azioni"><button type="button" class="pulsante testo">Chiudi</button></div>
+    </div>
+  </div>
+
+  <!-- ============ IL GIRO: riflettore, fumetto, barra di avanzamento ============ -->
+  <div class="giro" id="giro">
+    <div class="riflettore" id="riflettore" aria-hidden="true"></div>
+    <div class="avanzamento" aria-hidden="true"><div class="avanzamento-barra" id="avanzamento-barra"></div></div>
+
+    <div class="fumetto" id="fumetto" role="dialog" aria-modal="false" aria-labelledby="fumetto-titolo" aria-describedby="fumetto-testo" tabindex="-1">
+      <div class="freccia" id="freccia" aria-hidden="true"></div>
+      <div class="fumetto-testa">
+        <h2 id="fumetto-titolo"></h2>
+        <span class="contatore" id="contatore"></span>
+      </div>
+      <div class="fumetto-testo" id="fumetto-testo" aria-live="polite"></div>
+      <div class="fumetto-extra" id="fumetto-extra"></div>
+      <div class="fumetto-azioni" id="fumetto-azioni">
+        <button type="button" class="pulsante testo" id="indietro"><span class="mi" aria-hidden="true">arrow_back</span> Indietro</button>
+        <button type="button" class="pulsante pieno" id="avanti">Avanti <span class="mi" aria-hidden="true">arrow_forward</span></button>
+      </div>
+      <button type="button" class="chiudi-giro" id="chiudi-giro" aria-label="Chiudi il giro guidato" title="Chiudi (Esc)"><span class="mi" aria-hidden="true">close</span></button>
+    </div>
+
+    <button type="button" class="riprendi" id="riprendi" hidden><span class="mi" aria-hidden="true">play_arrow</span> Riprendi il giro</button>
+  </div>
+</div>
+
+<script src="tour.js?v=3"></script>
+</body>
+</html>
